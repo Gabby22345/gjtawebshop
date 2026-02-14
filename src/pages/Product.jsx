@@ -7,7 +7,7 @@ function Product() {
             <div className="products-grid">
                 <div className="product-card">
                     <div className="product-image">
-                        <img src="/product1.jpg" alt="Product 1" />
+                        <img src={process.env.PUBLIC_URL + "/product1.jpg"} alt="Product 1" />
                     </div>
                     <h3>Classic T-Shirt</h3>
                     <p>Premium quality cotton t-shirt</p>
@@ -17,7 +17,7 @@ function Product() {
 
                 <div className="product-card">
                     <div className="product-image">
-                        <img src="/product2.jpg" alt="Product 2" />
+                        <img src={process.env.PUBLIC_URL + "/product2.jpg"} alt="Product 2" />
                     </div>
                     <h3>Denim Jeans</h3>
                     <p>Comfortable fit jeans</p>
@@ -27,7 +27,7 @@ function Product() {
 
                 <div className="product-card">
                     <div className="product-image">
-                        <img src="/product3.jpg" alt="Product 3" />
+                        <img src={process.env.PUBLIC_URL + "/product3.jpg"} alt="Product 3" />
                     </div>
                     <h3>Summer Dress</h3>
                     <p>Light and breathable summer dress</p>
@@ -37,7 +37,7 @@ function Product() {
 
                 <div className="product-card">
                     <div className="product-image">
-                        <img src="/product4.jpg" alt="Product 4" />
+                        <img src={process.env.PUBLIC_URL + "/product4.jpg"} alt="Product 4" />
                     </div>
                     <h3>Hoodie Jacket</h3>
                     <p>Cozy and stylish hoodie</p>
@@ -47,7 +47,7 @@ function Product() {
 
                 <div className="product-card">
                     <div className="product-image">
-                        <img src="/Sweatpants.jpg" alt="Sweatpants" />
+                        <img src={process.env.PUBLIC_URL + "/Sweatpants.jpg"} alt="Sweatpants" />
                     </div>
                     <h3>Sweatpants</h3>
                     <p>Comfortable and warm sweatpants</p>
@@ -57,7 +57,7 @@ function Product() {
 
                 <div className="product-card">
                     <div className="product-image">
-                        <img src="/product4.jpg" alt="Hoodie" />
+                        <img src={process.env.PUBLIC_URL + "/product4.jpg"} alt="Hoodie" />
                     </div>
                     <h3>Hoodie</h3>
                     <p>Wrap yourself in pure comfort with our breathable, heavyweight fleece.</p>
@@ -67,7 +67,7 @@ function Product() {
 
                 <div className="product-card">
                     <div className="product-image">
-                        <img src="/product2.jpg" alt="Jorts" />
+                        <img src={process.env.PUBLIC_URL + "/product2.jpg"} alt="Jorts" />
                     </div>
                     <h3>Jorts</h3>
                     <p>Forget short-shorts—it's the summer of the knee-grazing jort.</p>

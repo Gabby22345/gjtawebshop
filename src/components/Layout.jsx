@@ -11,7 +11,7 @@ function Layout({ children }) {
     return (
         <>
             <header>
-                <img src="/logo.png" alt="company logo" className="logo" />
+                <img src={process.env.PUBLIC_URL + "/logo.png"} alt="company logo" className="logo" />
                 <h1>Y.O.U Clothing</h1>
             </header>
 
