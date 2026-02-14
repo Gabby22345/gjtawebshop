@@ -1,0 +1,406 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+header {
+    background: linear-gradient(135deg, #222 0%, #444 100%);
+    color: white;
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+    width: 80px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.container {
+    display: flex;
+    min-height: 80vh;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #ffffff;
+    padding: 20px 15px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar a {
+    display: block;
+    margin-bottom: 12px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 10px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    color: #ffffff;
+    background-color: #222;
+}
+
+main {
+    flex: 1;
+    padding: 30px;
+}
+
+main h1 {
+    color: #222;
+    font-size: 32px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #222;
+    padding-bottom: 10px;
+}
+
+main h2 {
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    margin: 15px 15px 8px 15px;
+    color: #222;
+    font-size: 18px;
+}
+
+.product-card p {
+    margin: 0 15px 15px 15px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.price {
+    display: block;
+    font-size: 22px;
+    color: #e74c3c;
+    margin: 10px 15px;
+    font-weight: bold;
+}
+
+.add-to-cart {
+    width: calc(100% - 30px);
+    margin: 0 15px 15px 15px;
+    padding: 12px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #444;
+    transform: scale(1.02);
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #444;
+}
+
+footer p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.login-form {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.login-form label {
+    font-weight: 600;
+    color: #333;
+}
+
+.login-form input,
+.login-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-form button,
+.login-btn,
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-form button:hover,
+.login-btn:hover,
+button[type="submit"]:hover {
+    background-color: #444;
+}
+
+.cart-items table {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-items th,
+.cart-items td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-items th {
+    background-color: #222;
+    color: white;
+}
+
+.cart-items input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.cart-items button {
+    padding: 5px 15px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.cart-items button:hover {
+    background-color: #c0392b;
+}
+
+.cart-total {
+    background-color: white;
+    padding: 20px;
+    text-align: right;
+}
+
+.cart-total p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.checkout {
+    padding: 12px 30px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.checkout:hover {
+    background-color: #444;
+}
+
+.payment-container {
+    max-width: 600px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.form-group input, 
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.radio-group {
+    margin: 15px 0;
+}
+
+.radio-group label {
+    display: block;
+    margin: 10px 0;
+    font-weight: normal;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 8px;
+}
+
+.total-box {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: #222;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #444;
+}
+
+.btn-secondary {
+    background-color: #ddd;
+    color: #333;
+}
+
+.receipt-container {
+    max-width: 600px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.success-icon {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.receipt-container h2 {
+    color: #27ae60;
+    margin: 10px 0;
+}
+
+.receipt-section {
+    text-align: left;
+    background: #f5f5f5;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.receipt-section h3 {
+    color: #222;
+    margin-top: 0;
+    border-bottom: 2px solid #222;
+    padding-bottom: 10px;
+}
+
+.receipt-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    color: #333;
+}
+
+.receipt-row.total {
+    font-weight: bold;
+    font-size: 18px;
+    border-top: 2px solid #222;
+    padding-top: 10px;
+}
+
+#response {
+    margin-top: 15px;
+    font-weight: bold;
+}
